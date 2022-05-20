@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/cardView_movieList"
+  android:layout_width="275dp"
+  android:layout_height="392dp"
+  android:layout_marginLeft="10dp"
+  app:cardCornerRadius="35dp"
+  app:cardElevation="10dp"
+  app:layout_constraintBottom_toBottomOf="parent"
+  app:layout_constraintEnd_toEndOf="parent"
+  app:layout_constraintStart_toStartOf="parent"
+  app:layout_constraintTop_toTopOf="parent">
+
+  <ImageView
+    android:id="@+id/iv_movieHeader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_launcher_background" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/shadow_back"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+      android:id="@+id/tv_title_searchItem"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="sans-serif-black"
+      android:textColor="@color/white" />
+    <TextView
+      android:id="@+id/tv_category_searchItem"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="sans-serif-black"
+      android:textColor="@color/white" />
+    <RatingBar
+      android:id="@+id/rb_movieList_item"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:clickable="false"
+      android:numStars="5" />
+
+  </LinearLayout>
+
+</androidx.cardview.widget.CardView>
